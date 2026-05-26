@@ -1,0 +1,566 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Borrowed Time | The Teen Sleep Debt Crisis</title>
+
+  <meta
+    name="description"
+    content="A research-based digital exhibit on teen sleep deprivation, academic pressure, physiology, and adolescent health."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- BACKGROUND EFFECTS -->
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+
+    <a href="#home" class="brand">
+      <span class="brand-mark"></span>
+      Borrowed<span>Time</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#abstract">Abstract</a>
+      <a href="#claims">Claims</a>
+      <a href="#data">Data Lab</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#paper">Research</a>
+      <a href="#solutions">Solutions</a>
+    </div>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero" id="home">
+
+    <div class="hero-left reveal">
+
+      <p class="kicker">
+        Digital Research Exhibit
+      </p>
+
+      <h1>
+        Borrowed <span>Time</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        How teenagers repay academic pressure with sleep debt.
+      </p>
+
+      <p class="hero-lead">
+        This website transforms a research paper on teen sleep deprivation
+        into an interactive experience investigating how insufficient sleep
+        affects cognition, mental health, physical health, physiology,
+        and academic performance.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#data" class="btn primary">
+          Enter the Data Lab
+        </a>
+
+        <a href="#paper" class="btn ghost">
+          Read the Research
+        </a>
+      </div>
+
+      <div class="hero-metrics">
+
+        <div>
+          <strong>8–10</strong>
+          <span>recommended hours for adolescents</span>
+        </div>
+
+        <div>
+          <strong>42.6%</strong>
+          <span>reported sleeping 5 hours or less</span>
+        </div>
+
+        <div>
+          <strong>39.3%</strong>
+          <span>said sleep affects health “a lot”</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- VIDEO PANEL -->
+    <aside class="video-panel reveal">
+
+      <div class="video-frame">
+
+        <video controls poster="video-cover.png">
+
+          <source
+            src="intro-video.mp4"
+            type="video/mp4"
+          />
+
+        </video>
+
+        <div class="video-placeholder">
+
+          <div class="play-icon">▶</div>
+
+          <h2>Your Intro Video</h2>
+
+          <p>
+            Upload your video as
+            <b>intro-video.mp4</b>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="video-script">
+
+        <p>
+          <b>Suggested opening:</b>
+
+          “What if I told you students are expected
+          to perform at their highest level while
+          functioning at their lowest biologically?”
+        </p>
+
+      </div>
+
+    </aside>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- ABSTRACT -->
+    <section class="section" id="abstract">
+
+      <div class="section-heading reveal">
+
+        <p class="kicker">
+          Research Abstract
+        </p>
+
+        <h2>
+          The crisis is not just tiredness.
+          It is biological debt.
+        </h2>
+
+        <p>
+          Sleep deprivation among teenagers is often
+          treated as normal, but research shows it affects
+          multiple systems simultaneously including memory,
+          emotional regulation, hormonal balance,
+          metabolism, and learning.
+        </p>
+
+      </div>
+
+      <div class="abstract-grid">
+
+        <article class="glass reveal">
+
+          <h3>Thesis Statement</h3>
+
+          <p>
+            Teen sleep deprivation is a widespread
+            public health issue that negatively affects
+            cognitive performance, mental well-being,
+            physical health, physiological development,
+            and long-term academic success.
+          </p>
+
+        </article>
+
+        <article class="glass reveal">
+
+          <h3>Core Question</h3>
+
+          <p>
+            What happens when students sacrifice
+            one of the body’s most essential needs
+            in order to meet academic, social,
+            and structural expectations?
+          </p>
+
+        </article>
+
+        <article class="glass reveal">
+
+          <h3>Why It Matters</h3>
+
+          <p>
+            When sleep becomes optional,
+            students may appear productive while
+            their brains and bodies function below
+            their full capacity.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- CLAIMS -->
+    <section class="section exhibit-panel" id="claims">
+
+      <div class="section-heading reveal">
+
+        <p class="kicker">
+          Research Claims
+        </p>
+
+        <h2>
+          Six findings build the argument.
+        </h2>
+
+      </div>
+
+      <div class="claim-grid">
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">01</div>
+
+          <h3>
+            Cognitive/Academic Damage
+          </h3>
+
+          <p>
+            Sleep deprivation weakens memory,
+            concentration, attention, decision-making,
+            reaction time, and academic performance.
+          </p>
+
+        </article>
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">02</div>
+
+          <h3>
+            Mental/Emotional Damage
+          </h3>
+
+          <p>
+            Insufficient sleep contributes to anxiety,
+            depression, burnout, irritability,
+            emotional instability, and stress sensitivity.
+          </p>
+
+        </article>
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">03</div>
+
+          <h3>
+            Physical Health Damage
+          </h3>
+
+          <p>
+            Sleep loss harms immune function,
+            cardiovascular health, metabolism,
+            energy regulation, and recovery.
+          </p>
+
+        </article>
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">04</div>
+
+          <h3>
+            Physiological Damage
+          </h3>
+
+          <p>
+            Sleep deprivation disrupts cortisol,
+            inflammation, insulin sensitivity,
+            circadian rhythms, and hormone balance.
+          </p>
+
+        </article>
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">05</div>
+
+          <h3>
+            Structural Causes
+          </h3>
+
+          <p>
+            Early school start times,
+            academic pressure, homework,
+            social media, extracurriculars,
+            and long commutes reduce sleep.
+          </p>
+
+        </article>
+
+        <article class="claim-card reveal">
+
+          <div class="claim-num">06</div>
+
+          <h3>
+            Long-Term Consequences
+          </h3>
+
+          <p>
+            Chronic sleep deprivation increases
+            long-term risks for health complications,
+            burnout, academic decline,
+            and developmental problems.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- DATA LAB -->
+    <section class="section" id="data">
+
+      <div class="section-heading reveal">
+
+        <p class="kicker">
+          Data Lab
+        </p>
+
+        <h2>
+          Survey results converted into visual evidence.
+        </h2>
+
+      </div>
+
+      <div class="chart-grid">
+
+        <article class="chart-card reveal">
+
+          <h3>
+            Hours of Sleep on School Nights
+          </h3>
+
+          <div class="chart-box">
+            <canvas id="sleepHoursChart"></canvas>
+          </div>
+
+        </article>
+
+        <article class="chart-card reveal">
+
+          <h3>
+            Health Impact of Sleep Loss
+          </h3>
+
+          <div class="chart-box">
+            <canvas id="healthImpactChart"></canvas>
+          </div>
+
+        </article>
+
+        <article class="chart-card reveal">
+
+          <h3>
+            Illness During School Year
+          </h3>
+
+          <div class="chart-box">
+            <canvas id="illnessChart"></canvas>
+          </div>
+
+        </article>
+
+        <article class="chart-card reveal">
+
+          <h3>
+            Multi-System Impact Map
+          </h3>
+
+          <div class="chart-box">
+            <canvas id="impactRadar"></canvas>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- SLEEP CALCULATOR -->
+    <section class="section exhibit-panel" id="calculator">
+
+      <div class="calculator-grid">
+
+        <div class="section-heading reveal">
+
+          <p class="kicker">
+            Interactive Tool
+          </p>
+
+          <h2>
+            Sleep Debt Calculator
+          </h2>
+
+          <p>
+            Enter your average sleep on school nights.
+            The calculator estimates weekly sleep debt
+            using 8 hours as a baseline.
+          </p>
+
+        </div>
+
+        <article class="calculator-card reveal">
+
+          <label>
+            Average Hours of Sleep
+          </label>
+
+          <input
+            id="sleepInput"
+            type="number"
+            min="0"
+            max="12"
+            step="0.5"
+            value="5"
+          />
+
+          <button
+            class="btn primary full"
+            onclick="calculateDebt()"
+          >
+            Calculate Sleep Debt
+          </button>
+
+          <div
+            class="debt-result"
+            id="debtResult"
+          >
+            Enter your hours above.
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- RESEARCH PAPER -->
+    <section class="section" id="paper">
+
+      <div class="section-heading reveal">
+
+        <p class="kicker">
+          Research Paper
+        </p>
+
+        <h2>
+          Borrowed Time:
+          How Teenagers Repay Academic Pressure
+          With Sleep Debt
+        </h2>
+
+      </div>
+
+      <article class="paper reveal">
+
+        <h3>Introduction</h3>
+
+        <p>
+          For many teenagers, academic success comes
+          at a price, and that price is often paid in sleep.
+          Late nights filled with assignments, studying,
+          deadlines, and pressure become a routine where
+          rest feels optional rather than necessary.
+        </p>
+
+        <h3>Cognitive Effects</h3>
+
+        <p>
+          Sleep deprivation weakens memory,
+          concentration, reaction time,
+          decision-making, and academic performance.
+          It becomes harder for students to retain
+          information and remain mentally engaged.
+        </p>
+
+        <h3>Mental and Emotional Effects</h3>
+
+        <p>
+          Sleep deprivation contributes to anxiety,
+          burnout, irritability, emotional instability,
+          and increased stress sensitivity.
+        </p>
+
+        <h3>Physical and Physiological Effects</h3>
+
+        <p>
+          Sleep deprivation affects immune function,
+          metabolism, hormonal regulation,
+          inflammation, cortisol, and recovery systems.
+        </p>
+
+        <h3>Conclusion</h3>
+
+        <p>
+          Sleep is not extra. It is essential.
+          Students cannot perform at a high level
+          while functioning in a constant state
+          of exhaustion.
+        </p>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      <b>Borrowed Time</b>
+      | Teen Sleep Deprivation Research Website
+    </p>
+
+    <p>
+      Created by Shamor Johnson
+    </p>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
